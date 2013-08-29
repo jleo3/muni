@@ -7,6 +7,12 @@ describe AboutController do
 
       response.should be_success
     end
+
+    it "will render the officers page" do
+      get :officers
+
+      response.should be_success
+    end
   end
 
 end
