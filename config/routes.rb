@@ -6,4 +6,5 @@ Muni::Application.routes.draw do
   get 'about/presidents' => 'about#presidents'
 
   get 'membership/current' => 'membership#current'
+  get 'membership/dues' => 'membership#dues'
 end

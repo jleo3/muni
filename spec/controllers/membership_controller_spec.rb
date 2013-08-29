@@ -6,4 +6,10 @@ describe MembershipController do
 
     response.should be_success
   end
+
+  it "will render dues page" do
+    get :dues
+
+    response.should be_success
+  end
 end
