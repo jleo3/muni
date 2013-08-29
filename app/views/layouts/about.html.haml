@@ -1,0 +1,13 @@
+%html
+  %body{:class => "#{controller_name} #{action_name}"}
+    .navbar.navbar-fixed-top
+      %nav.navbar-inner
+        .container
+          = render 'layouts/navigation'
+    #main{:role => "main"}
+      .container
+        .content
+          .row
+            .span12
+              = render 'layouts/sub_navigation'
+              = yield
