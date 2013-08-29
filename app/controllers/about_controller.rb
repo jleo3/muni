@@ -4,4 +4,7 @@ class AboutController < ApplicationController
 
   def officers
   end
+
+  def presidents
+  end
 end

@@ -13,6 +13,11 @@ describe AboutController do
 
       response.should be_success
     end
-  end
 
+    it "will render the presidents page" do
+      get :presidents
+
+      response.should be_success
+    end
+  end
 end

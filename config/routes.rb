@@ -3,4 +3,5 @@ Muni::Application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
   get 'about/history' => 'about#history'
   get 'about/officers' => 'about#officers'
+  get 'about/presidents' => 'about#presidents'
 end
