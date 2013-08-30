@@ -1,3 +1,36 @@
-= link_to "Home", root_path, :class => 'brand'
-= link_to "About Us", about_history_path, :class => 'brand'
-= link_to "Membership", membership_current_path, :class => 'brand'
+.btn-group
+  .open
+    %a.btn.btn-primary{:href => "/"}
+      %i.icon-home
+      Home
+
+.btn-group
+  %a.btn.btn-primary{:href => "/about/history"}
+    %i.icon-user
+    About Us
+  %a.btn.btn-primary.dropdown-togle{"data-toggle" => "dropdown", :href => "about/history"}
+    %span.icon-caret-down
+  %ul.dropdown-menu
+    %li
+      %a{:href => "/about/history"}
+        %i.icon-fixed-width.icon-circle-arrow-right
+        Club History 
+    %li
+      %a{:href => "/about/officers"}
+        %i.icon-fixed-width.icon-circle-arrow-right
+        Current Officers
+    %li
+      %a{:href => "/about/presidents"}
+        %i.icon-fixed-width.icon-circle-arrow-right
+        Past Presidents
+.btn-group
+  %a.btn.btn-primary{:href => "/membership/current"}
+    %i.icon-group
+    Membership
+  %a.btn.btn-primary.dropdown-togle{"data-toggle" => "dropdown", :href => "/membership/current"}
+    %span.icon-caret-down
+  %ul.dropdown-menu
+    %li
+      %a{:href => "/membership/current"}
+        %i.icon-fixed-width.icon-circle-arrow-right
+        Current Members
