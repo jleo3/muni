@@ -3,6 +3,8 @@
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
       %title= content_for?(:title) ? yield(:title) : "Muni"
+      %link{ href: '//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css', rel: 'stylesheet' }
+      %link{ href: '//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css', rel: 'stylesheet' }
       %meta{:content => content_for?(:description) ? yield(:description) : "Muni", :name => "description"}
         = stylesheet_link_tag "application", :media => "all"
         = javascript_include_tag "application"
