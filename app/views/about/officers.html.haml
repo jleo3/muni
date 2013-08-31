@@ -1,20 +1,27 @@
 %h3 Current Officers
 
 %div.carousel.slide{:id => "membersCarousel"}
+  %ol.carousel-indicators
+    %li.active{"data-target" => "#membersCarousel", "data-slide-to" => "0"}
+    %li{"data-target" => "#membersCarousel", "data-slide-to" => "1"}
+    %li{"data-target" => "#membersCarousel", "data-slide-to" => "2"}
+    %li{"data-target" => "#membersCarousel", "data-slide-to" => "3"}
+
   .carousel-inner
-    .item.active
+    .item.inner-item.active
+      %img.center{:src => "http://placehold.it/300x300", :alt => ""}
+      .carousel-caption.officers-caption Caption text here
+    .item.inner-item
       %img{:src => "http://placehold.it/300x300", :alt => ""}
-      .carousel-caption Caption text here
-    .item
+      .carousel-caption.officers-caption Caption text here
+    .item.inner-item
       %img{:src => "http://placehold.it/300x300", :alt => ""}
-      .carousel-caption Caption text here
-    .item
+      .carousel-caption.officers-caption Caption text here
+    .item.inner-item
       %img{:src => "http://placehold.it/300x300", :alt => ""}
-      .carousel-caption Caption text here
-    .item
-      %img{:src => "http://placehold.it/300x300", :alt => ""}
-      .carousel-caption Caption text here
+      .carousel-caption.officers-caption Caption text here
   %a.left.carousel-control{:href => "#membersCarousel", "data-slide" => "prev"}
     %span.glyphicon.glyphicon-chevron-left
   %a.right.carousel-control{:href => "#membersCarousel", "data-slide" => "next"}
-    %span.icon-chevron-right
+    %span.glyphicon.glyphicon-chevron-right
+
