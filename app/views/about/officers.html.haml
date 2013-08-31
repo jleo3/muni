@@ -1,7 +1,20 @@
-%h1 Current Officers
-%body
-  .officersCarousel{:class => "carousel slide"}
-    %ol{:class => "carousel-indicators"}
+%h3 Current Officers
 
-
-
+%div.carousel.slide{:id => "membersCarousel"}
+  .carousel-inner
+    .item.active
+      %img{:src => "http://placehold.it/300x300", :alt => ""}
+      .carousel-caption Caption text here
+    .item
+      %img{:src => "http://placehold.it/300x300", :alt => ""}
+      .carousel-caption Caption text here
+    .item
+      %img{:src => "http://placehold.it/300x300", :alt => ""}
+      .carousel-caption Caption text here
+    .item
+      %img{:src => "http://placehold.it/300x300", :alt => ""}
+      .carousel-caption Caption text here
+  %a.left.carousel-control{:href => "#membersCarousel", "data-slide" => "prev"}
+    %span.glyphicon.glyphicon-chevron-left
+  %a.right.carousel-control{:href => "#membersCarousel", "data-slide" => "next"}
+    %span.icon-chevron-right
