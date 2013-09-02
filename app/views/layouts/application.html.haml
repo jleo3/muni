@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-      %title= content_for?(:title) ? yield(:title) : "Muni"
+      %title= content_for?(:title) ? yield(:title) : "MBCNY"
       %link{ href: '//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css', rel: 'stylesheet' }
       %link{ href: '//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css', rel: 'stylesheet' }
       %meta{:content => content_for?(:description) ? yield(:description) : "Muni", :name => "description"}
@@ -12,21 +12,21 @@
         = yield(:head)
 
   %body{:class => "#{controller_name} #{action_name}"}
-    .navbar.navbar-fixed-top
-      .navbar-inner.muni-navbar-inner
-        .container
-          %button.btn.btn-navbar{"data-toggle" => "collapse", "data-target" => ".nav-collapse"}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          .brand
-            = image_tag("mbcny_linkedin.png", :size => "45x30")
-            %a{:href => "/"} MBCNY
+    .muni-container
+      .navbar.navbar-fixed-top
+        .navbar-inner.muni-navbar-inner
+          .container
+            %button.btn.btn-navbar{"data-toggle" => "collapse", "data-target" => ".nav-collapse"}
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            .brand
+              = image_tag("mbcny_linkedin.png", :size => "45x30")
+              %a{:href => "/"} MBCNY
 
-          .nav-collapse.collapse
-            %ul.nav
-              = render 'layouts/navigation'
-
+            .nav-collapse.collapse
+              %ul.nav
+                = render 'layouts/navigation'
 
       #main{:role => "main"}
         .container.hero-container
