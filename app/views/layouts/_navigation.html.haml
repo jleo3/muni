@@ -1,18 +1,13 @@
-.btn-group
-  .open
-    %a.btn.btn-primary{:href => "/"}
-      %i.icon-home
-      Home
+%li.active.__web-inspector-hide-shortcut__
+  %a{:href => "/"} Home
 
-.btn-group
-  %a.btn.btn-primary{:href => "/about/history"}
-    %i.icon-user
-    About Us
-  %a.btn.btn-primary.dropdown-togle{"data-toggle" => "dropdown", :href => "about/history"}
-    %span.icon-caret-down
+%li.dropdown
+  %a.dropdown-toggle{:href => "/about/history", "data-toggle" => "dropdown"} 
+    About
+    %b.caret
   %ul.dropdown-menu
     %li
-      %a{:href => "/about/history"}
+      %a{:href => "/about/history"} 
         %i.icon-fixed-width.icon-circle-arrow-right
         Club History 
     %li
@@ -23,14 +18,13 @@
       %a{:href => "/about/presidents"}
         %i.icon-fixed-width.icon-circle-arrow-right
         Past Presidents
-.btn-group
-  %a.btn.btn-primary{:href => "/membership/current"}
-    %i.icon-group
+
+%li.dropdown
+  %a.dropdown-toggle{:href => "/membership/current", "data-toggle" => "dropdown"} 
     Membership
-  %a.btn.btn-primary.dropdown-togle{"data-toggle" => "dropdown", :href => "/membership/current"}
-    %span.icon-caret-down
+    %b.caret
   %ul.dropdown-menu
     %li
-      %a{:href => "/membership/current"}
+      %a{:href => "/membership/current"} 
         %i.icon-fixed-width.icon-circle-arrow-right
         Current Members

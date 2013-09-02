@@ -11,13 +11,18 @@
         = csrf_meta_tags
         = yield(:head)
   %body{:class => "#{controller_name} #{action_name}"}
-    .container
-      .masthead
-        = image_tag("officers/mbcny_logo.jpg", :size => "30x30")
-        Munical Bond Club of New York
-      .navbar
-        .navbar-inner
-          .container
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %button.btn.btn-navbar{"data-toggle" => "collapse", "data-target" => ".nav-collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          .brand
+            %a.brand{:href => "#"} MBCNY
+            = image_tag("officers/mbcny_logo.jpg", :size => "25x25")
+
+          .nav-collapse.collapse
             %ul.nav
               = render 'layouts/navigation'
     #main{:role => "main"}
