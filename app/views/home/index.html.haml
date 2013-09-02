@@ -1,5 +1,8 @@
 .hero-unit
-  %h2 The Municipal Bond Club of New York
+  .home-container
+    = image_tag("officers/mbcny_logo.jpg", :size => "60x60")
+    %span.home-container-text
+      %h2 The Municipal Bond Club of New York
   %p Welcome to The Municipal Bond Club of New York website. The club was established 1932, the object of this Club is to encourage good fellowship among its members and to provide and maintain high standards and principles.
   %p
     %a.btn.btn-primary.btn-large{:href => "#"} 
@@ -8,8 +11,27 @@
 .row
   %div.span4
     %h3 Learn about MBCNY
-    %p The Municipal Bond Club of NY was established in 1932 and boasts over 400 members. We are involved in all aspects of the municipal marketplace.
+    %p The Municipal Bond Club of New York was established in 1932 and boasts over 400 members. We are involved in all aspects of the municipal marketplace.
     %p
       %a{:href => "/about/history"}
+        %i.icon-fixed-width.icon-circle-arrow-right
+        Learn More
+
+  %div.span4
+    %h3 Become a Member
+    %p The Municipal Bond Club of New York is accepting a limited number of applications for membersihp. New members must:
+    %p - Work within a 75-mile radius of New York City
+    %p - Have a minimum of 5 years experience in the business
+    %p - Be "sponsored" by a current member of the Club
+    %p
+      %a{:href => "#"}
+        %i.icon-fixed-width.icon-circle-arrow-right
+        Learn More
+
+  %div.span4
+    %h3 Get Educated
+    %p In partnership with SIFMA, we promote the education of our members through our Bond School and Advanced Bond School.
+    %p
+      %a{:href => "#"}
         %i.icon-fixed-width.icon-circle-arrow-right
         Learn More
