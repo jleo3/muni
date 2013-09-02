@@ -1,33 +1,34 @@
-%h3 Current Officers
+.hero-unit
+  %h3 Current Officers
 
-%div.carousel.slide{:id => "membersCarousel"}
-  %ol.carousel-indicators
-    %li.active{"data-target" => "#membersCarousel", "data-slide-to" => "0"}
-    %li{"data-target" => "#membersCarousel", "data-slide-to" => "1"}
-    %li{"data-target" => "#membersCarousel", "data-slide-to" => "2"}
-    %li{"data-target" => "#membersCarousel", "data-slide-to" => "3"}
+  %div.carousel.slide{:id => "membersCarousel"}
+    %ol.carousel-indicators
+      %li.active{"data-target" => "#membersCarousel", "data-slide-to" => "0"}
+      %li{"data-target" => "#membersCarousel", "data-slide-to" => "1"}
+      %li{"data-target" => "#membersCarousel", "data-slide-to" => "2"}
+      %li{"data-target" => "#membersCarousel", "data-slide-to" => "3"}
 
-  .carousel-inner
-    .item.inner-item.active
-      = image_tag("officers/stephen_siegel.jpg", :size => "160x200")
-      .carousel-caption
-        .officers-caption 
-          President
-          %br
-          %br
-          Stephen Siegel - Chapdelaine &amp; Co - (212) 208 - 9044
-    .item.inner-item
-      = image_tag("officers/dana_villanova.jpg", :size => "160x200")
-      .carousel-caption.officers-caption Dana Villanova - Assured Guaranty - (212) 408 - 6065
-    .item.inner-item
-      = image_tag("officers/colleen_meehan.jpg", :size => "160x200")
-      .carousel-caption.officers-caption Colleen Meehan - The Dreyfus Corp. - (212) 922 - 6420
-    .item.inner-item
-      = image_tag("officers/mike_goin.jpg", :size => "160x200")
-      .carousel-caption.officers-caption Mike Goin - Barclays Capital - (212) 528 - 7164
+    .carousel-inner
+      .item.inner-item.active
+        = image_tag("officers/stephen_siegel.jpg", :size => "160x200")
+        .carousel-caption
+          .officers-caption 
+            President
+            %br
+            %br
+            Stephen Siegel - Chapdelaine &amp; Co - (212) 208 - 9044
+      .item.inner-item
+        = image_tag("officers/dana_villanova.jpg", :size => "160x200")
+        .carousel-caption.officers-caption Dana Villanova - Assured Guaranty - (212) 408 - 6065
+      .item.inner-item
+        = image_tag("officers/colleen_meehan.jpg", :size => "160x200")
+        .carousel-caption.officers-caption Colleen Meehan - The Dreyfus Corp. - (212) 922 - 6420
+      .item.inner-item
+        = image_tag("officers/mike_goin.jpg", :size => "160x200")
+        .carousel-caption.officers-caption Mike Goin - Barclays Capital - (212) 528 - 7164
 
-  %a.left.officers-control-left{:href => "#membersCarousel", "data-slide" => "prev"}
-    %span.icon-chevron-left
-  %a.right.officers-control-right{:href => "#membersCarousel", "data-slide" => "next"}
-    %span.icon-chevron-right
+    %a.left.officers-control-left{:href => "#membersCarousel", "data-slide" => "prev"}
+      %span.icon-chevron-left
+    %a.right.officers-control-right{:href => "#membersCarousel", "data-slide" => "next"}
+      %span.icon-chevron-right
 

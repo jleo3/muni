@@ -10,6 +10,7 @@
         = javascript_include_tag "application"
         = csrf_meta_tags
         = yield(:head)
+
   %body{:class => "#{controller_name} #{action_name}"}
     .navbar.navbar-fixed-top
       .navbar-inner
@@ -19,14 +20,16 @@
             %span.icon-bar
             %span.icon-bar
           .brand
-            %a.brand{:href => "#"} MBCNY
+            %a.brand{:href => "/"} MBCNY
             = image_tag("officers/mbcny_logo.jpg", :size => "25x25")
 
           .nav-collapse.collapse
             %ul.nav
               = render 'layouts/navigation'
-    .container
-      .hero-unit
-        = render 'layouts/messages'
-        = yield
+
+
+      #main{:role => "main"}
+        .container.hero-container
+          = render 'layouts/messages'
+          = yield
     %footer
