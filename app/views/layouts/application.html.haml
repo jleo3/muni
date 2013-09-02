@@ -15,10 +15,11 @@
       .masthead
         = image_tag("officers/mbcny_logo.jpg", :size => "30x30")
         Munical Bond Club of New York
-    .navbar.navbar-fixed-top
-      %nav.navbar-inner
-        .container
-          = render 'layouts/navigation'
+      .navbar
+        .navbar-inner
+          .container
+            %ul.nav
+              = render 'layouts/navigation'
     #main{:role => "main"}
       .container
         .content
