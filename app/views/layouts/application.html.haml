@@ -25,13 +25,8 @@
           .nav-collapse.collapse
             %ul.nav
               = render 'layouts/navigation'
-    #main{:role => "main"}
-      .container
-        .content
-          .row
-            .span12
-              = render 'layouts/messages'
-              = yield
-          %footer
-      / ! end of .container
-    / ! end of #main
+    .container
+      .hero-unit
+        = render 'layouts/messages'
+        = yield
+    %footer
