@@ -13,15 +13,15 @@
 
   %body{:class => "#{controller_name} #{action_name}"}
     .navbar.navbar-fixed-top
-      .navbar-inner
+      .navbar-inner.muni-navbar-inner
         .container
           %button.btn.btn-navbar{"data-toggle" => "collapse", "data-target" => ".nav-collapse"}
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
           .brand
-            %a.brand{:href => "/"} MBCNY
-            = image_tag("officers/mbcny_logo.jpg", :size => "25x25")
+            = image_tag("mbcny_linkedin.png", :size => "45x30")
+            %a{:href => "/"} MBCNY
 
           .nav-collapse.collapse
             %ul.nav
